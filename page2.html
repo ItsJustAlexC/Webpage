@@ -1,15 +1,135 @@
 <!DOCTYPE html>
-<html>
+<html id="top" style="scroll-behavior: smooth;">
     <head>
         <title>My Webpage</title>
+        
         <style>
             a { text-decoration: none; color: #28f005;}
+            p { color: #28f005;}
+            label {color: #28f005}
         </style>
     </head>
-    <body style="margin: 0px; background-color: #1e1e1e;">
-        <label style="position:absolute;left: 10px; bottom: 10px;">
+    <body>
+        <Style>
+            body{
+                background-color: #ffffff;
+            }
+            .subscribe-button{
+                padding: 9px;
+                color: #ffffff;
+                background-color: #d10f0f;
+                border-radius: 2px;
+                border: none;
+                cursor: pointer;
+                margin-left: 0px;
+                margin-right: 5px;
+                transition: opacity, .2s;
+            }
+            .subscribe-button:hover{
+                opacity: 0.8;
+            }
+            .subscribe-button:active{
+                opacity: 0.6;
+            }
+            .join-button{
+                padding: 9px;
+                color: #0665c4;
+                background-color: #ffffff;
+                border-style: solid;
+                border-radius: 2px;
+                border-width: 1px;
+                border-color: #0665c4;
+                cursor: pointer;
+                margin-left: 5px;
+                margin-right: 5px;
+                transition: background-color .2s, color .2s, opacity .2s;
+            }
+            .join-button:hover{
+                background-color: #0665c4;
+                color: #ffffff;
+            }
+            .join-button:active{
+                opacity: .6;
+            }
+            .tweet-button{
+                padding: 9px;
+                color: #ffffff;
+                font-weight: bold;
+                background-color: #1d83c2;
+                border-style: solid;
+                border-radius: 20px;
+                border-width: 1px;
+                border-color: #0665c4;
+                cursor: pointer;
+                margin-left: 5px;
+                margin-right: 5px;
+                transition: box-shadow .3s, opacity .2s;
+            }
+            .tweet-button:hover{
+                box-shadow: 1px 1px 10px rgba(0,0,0,.4);
+            }
+            .tweet-button:active{
+                opacity: .9;
+            }
+            .download-button{
+                padding: 11px;
+                color: #666666;
+                font-weight: bold;
+                font-size: 12px;
+                background-color: #ffffff;
+                border-style: solid;
+                border-radius: 4px;
+                border-width: 1px;
+                border-color: #444444;
+                cursor: pointer;
+                margin-left: 5px;
+                margin-right: 5px;
+                transition: background-color .2s, color .2s;
+            }
+            .download-button:hover{
+                background-color: #666666;
+                color: #ffffff;
+            }
+            .download-button:active{
+                opacity: .8;
+            }
+
+
+        </Style>
+        <button class="subscribe-button">
+            SUBSCRIBE
+        </button>
+    
+        <button class="join-button">
+            JOIN
+        </button>
+
+        <button class="tweet-button">
+            TWEET
+        </button>
+
+        <button class="download-button">
+            Download
+        </button>
+        
+        <br>
+
+        <label>
+            <a href="#bottom">bottom</a>
+        </label>
+
+        <label style="position:absolute;left: 10px; bottom: -900px;">
             <a href="index.html">Page 1</a>
         </label>
+
+        <label style="position:absolute;left: 600px; bottom: -900px;">
+            <a href="#top">top</a>
+        </label>
+
         <script src="index.js"></script>
+
+        <label  id="bottom" style="position:absolute;left: 600px; bottom: -900px;">
+
+        </label>
     </body>
 </html>
