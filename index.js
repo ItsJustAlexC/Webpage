@@ -14,5 +14,4 @@ if(canvas != null){
 
 function doSomething(){
     document.getElementById("header").innerHTML = "COOL!";
-    console.log("hello");
 }
