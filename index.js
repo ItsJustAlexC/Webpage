@@ -10,8 +10,6 @@ if(canvas != null){
     console.log("no canvas")
 }
 
-
-
 function doSomething(){
     document.getElementById("header").innerHTML = "COOL!";
 }
