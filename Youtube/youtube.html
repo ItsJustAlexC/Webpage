@@ -3,63 +3,104 @@
     <head>
         <title>Youtube.com Clone</title>
         <style>
-            .email{
-                font-size: 16px;
-                vertical-align: top;
-                margin-top: 0px;
-                margin-bottom: 5px;
-            }
-            .search-bar{
-                width: 390px;
-                padding-right: 6px;
-                padding-top: 6px;
-                padding-bottom: 6px;
-                border-width: 2px;
-                border-style: solid;
-                border-radius: 4px;
-                border-color: #1e1e1e;
-            }
-            .agreement{
-                font-size: 16px;
-            }
-            .button{
-                padding-left:145px;
-                padding-right:145px;
-                padding-top: 13px;
-                padding-bottom: 13px;
-                border-radius: 30px;
-                border-color: #0b66f8;
-                border-style: solid;
-                font-size: 20px;
-                background-color: #1D74FF;
-                color: #ffffff
-            }
-            .button:hover{
-                opacity: .8;
-            }
-            .google{
-                padding-left:20px;
-                padding-right:20px;
-                padding-top:15px;
-                padding-bottom:15px;
-                border-radius: 50px;
-                border-style: solid;
-                border: none;
-                box-shadow: 0px 0px 8px rgba(0,0,0,.2);
-                text-align: left;
-                width: 400px;
-                outline: none;
-                font-stretch:extra-expanded;
-            }
+        p{
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        .search-bar{
+            display: block;
+            outline: none;
+        }
+        .thumbnail{
+            display: block;
+            max-width: 100%;
+        }
+        .video-title{
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .video-author{
+            font-size: 14px;
+            display:block;
+            margin-bottom: 6px;
+
+        }
+        .video-stats{
+            display:block;
+            margin-top: 0px;
+            font-size: 15px;
+        }
+        .video-preview{
+            margin-right: 20px;
+            vertical-align: top;
+            display: inline-block;
+            width: 325px;
+            height: 325px;
+            box-shadow: 0px 0px 5px #1e1e1e;
+        }
+        .channel-img{
+            display: inline-block;
+            width: 50px;
+            vertical-align: top;
+        }
+        .video-info{
+            display:inline-block;
+            width: 245px;
+        }
+        .profile-picture{
+            margin-top: 10px ;
+            width: 100%;
+            border-radius: 25px;
+        }
+
         </style>
     </head>
     <body style="font-family:sans-serif">
-        <p class="email">Email</p>
-        <input class="search-bar" type="text" placeholder="example@gmail.com">
-        <p class="agreement">By clicking Agree & Join, you agree to the Privacy Policy.</p>
-        <button class="button">Agree & Join</button>
-        <br>
-        <br>
-        <input class="google" type="text" placeholder="Search Google or type a URL">
+        <input class="search-bar" type="searchbar">
+        
+        <div class="video-preview">
+            <div>
+                <img class="thumbnail" src="images/lofigirl.png">
+            </div>
+            <div>
+                <div class="channel-img">
+                    <img class="profile-picture" src="channel_imgs/lofigirlYT.png">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        12 A.M Study Session 📚 [lofi hip hop/chill beats]
+                    </p>
+                    <p class="video-author">
+                        Lofi Girl
+                    </p>
+                    <p class="video-stats">
+                        3.2M views &#183; 5 months ago
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="video-preview">
+            <div>
+                <img class="thumbnail" src="images/10YearsOfMarkiplier.png">
+            </div>
+            <div>
+                <div class="channel-img">
+                    <img class="profile-picture" src="channel_imgs/markiplierYT.png">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        10 Years of Markiplier
+                    </p>
+                    <p class="video-author">
+                        Markiplier
+                    </p>
+                    <p class="video-stats">
+                        2.8M views &#183; Streamed 1 month ago
+                    </p>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
